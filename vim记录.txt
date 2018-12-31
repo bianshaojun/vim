@@ -427,3 +427,28 @@ day17
 3,:v/re/d命令--只保留匹配re的行,删除其他的行;
 4,:g/re/y X命令--复制匹配re的所有的行,到寄存器X中(X寄存器名为大写,使用前用qxq命令将寄存器清空);
 5,:global/{start}/ .,{finish} [cmd]命令--对从start开始到finish结束的所有行执行[cmd];
+
+day18
+1,安装ctags：
+	sudo apt-get install exuberant-ctags
+2,生成tags文件：
+	在shell中--ctags filename，根据指定文件名在当前目录下生成tags文件；
+			ctags -R，在当前目录下，递归子目录生成tags文件；
+	在vim中--:!ctags filename or :!ctags -R,生成tags文件，其实跟shell中一样，利用！来执行shell的命令；
+3,设置快捷键F5：
+	:nnoremap <F5> :!ctags -R<CR>
+	利用快捷键在vim中按F5更新tags文件；
+4,保存文件时，自动更新tags文件：
+	:autocmd BufWritePost * call system("ctags -R")
+5,ctags浏览命令：
+	<C-]>--跳转到匹配当前光标下关键字的第一处标签；
+	g<C-]>--如果有多个标签匹配当前光标下的关键字，提示用户指定一处进行跳转，如果只有一处，则直接跳转；
+	:tag {keyword}--跳转到匹配keyword的第一处标签；
+	:tjump {keyword}--如果有多个标签匹配keyword，提示用户指定一处进行跳转，如果只有一处，则直接跳转；
+	:pop or <C-t>--反向遍历标签历史；
+	:tag--正向遍历标签历史；
+	:tnext--跳转到下一处匹配的标签；
+	:tprev--跳转到上一处匹配的标签；
+	:tfirst--跳转到第一个匹配的标签；
+	:tlast--跳转到最后一个匹配的标签；
+	:tselect--提示用户总标签匹配列表中选择一处进行跳转；
