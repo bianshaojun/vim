@@ -110,4 +110,4 @@
 	正向/反向重复t/T/f/F操作;
 
 
-### [NEXT DAY](file://vimDay19.md)
+### [NEXT DAY](.vimDay19.md)
