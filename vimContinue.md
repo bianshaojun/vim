@@ -1,5 +1,5 @@
 # vimNote
-##vimContinue
+## vimContinue
 
 * J命令
 
