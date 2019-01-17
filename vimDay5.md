@@ -4,7 +4,7 @@
 * :set autoindent/ai命令
 
 	开启自动缩进，noautoindent/noai，关闭自动缩进；
-* :set shiftwhidth=4命令
+* :set shiftwidth=4命令
 	
 	设置自动缩进的宽度为4；
 * :set softtabstop/sts=4命令
