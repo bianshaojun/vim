@@ -41,4 +41,4 @@ save some vim files for myself.
 
 [day19](https://github.com/bianshaojun/vim/blob/master/vimDay19.md)
 
-[day20](https://github.com/bianshaojun/vim/blob/master/vimDay20.md)
+[day20](./vimDay20.md)
