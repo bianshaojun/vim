@@ -1,4 +1,4 @@
-# vim Note
+# vimNote
 
 ## day20
 * 触发自动补全
