@@ -1,6 +1,6 @@
-## vim note
+# vimNote
 
-### day19
+## day19
 * :make命令
 
 	在vim中可以使用make命令,直接编译文件;
